@@ -44,6 +44,12 @@ public class ContactPageTest extends TestBase {
 		contactPage.selectContactByName("Ashutest singh test");
 	}
 	
+	@Test(priority=4)
+	public void createContactPage() throws FileNotFoundException {
+		homePage.createNewContact();
+		contactPage.createContactPage("Ashutosh", "Singh", "Genpact");
+	}
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
