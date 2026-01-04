@@ -20,7 +20,7 @@ public class TestBase {
 	public static Properties prop;
 	
 
-	public TestBase() throws FileNotFoundException {
+	public TestBase() {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
