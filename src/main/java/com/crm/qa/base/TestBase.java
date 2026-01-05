@@ -50,10 +50,10 @@ public class TestBase {
 			driver=new FirefoxDriver();
 		}
 		// Decorate driver with listener
-		decoratedDriver =
-			    new EventFiringDecorator(new WebDriverListner())
-			        .decorate(driver);
-		driver=decoratedDriver;
+//		decoratedDriver =
+//			    new EventFiringDecorator(new WebDriverListner())
+//			        .decorate(driver);
+//		driver=decoratedDriver;
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtils.PAGE_LOAD_TIMEOUT));
