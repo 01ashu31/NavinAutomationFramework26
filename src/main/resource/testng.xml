@@ -5,16 +5,18 @@
 	thread-count="2">
 
 	<listeners>
-		<listener
-			class-name="com.crm.qa.extentreportlistner.ExtentReportListnerNG"/>
+		<listener class-name="com.crm.qa.extentreportlistner.ExtentReportListnerNG" />
+		<listener class-name="com.crm.qa.utils.MyTransformer"/>
 	</listeners>
+	
+	        
 
 
 	<test name="FreeCRM application testcases">
 		<classes>
-			<class name="com.crm.qa.testcases.ContactPageTest"/>
-			<class name="com.crm.qa.testcases.HomePageTest"/>
-			<class name="com.crm.qa.testcases.LoginPageTest"/>
+			<class name="com.crm.qa.testcases.ContactPageTest" />
+			<class name="com.crm.qa.testcases.HomePageTest" />
+			<class name="com.crm.qa.testcases.LoginPageTest" />
 		</classes>
 	</test>
 </suite>
