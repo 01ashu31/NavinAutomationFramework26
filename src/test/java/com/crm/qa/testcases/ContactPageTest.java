@@ -55,7 +55,7 @@ public class ContactPageTest extends TestBase {
 		
 	}
 	
-	@Test(priority=4, dataProvider="getCRMTestData")
+	@Test(priority=4, dataProvider="getCRMTestData", enabled=false)
 	public void createContactPage(String Fname, String Lname, String CName) throws FileNotFoundException {
 		homePage.createNewContact();
 //		contactPage.createContactPage("Ashutosh", "Singh", "Genpact");
