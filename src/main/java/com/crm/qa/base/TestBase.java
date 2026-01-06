@@ -66,7 +66,7 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 	}
 	
-	@Override
+	
 	@AfterMethod
 	public void tearDown() {
 		if (driver !=null) {
